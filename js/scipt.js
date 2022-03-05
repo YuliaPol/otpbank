@@ -4,7 +4,7 @@ jQuery(function ($) {
         $('.page-wrap').on('input', '.diapason-answer .input-range', function(e){
             setDiapasonValue(this);
             $('.form-wrapper').find('.btn-submit').addClass('active')
-            $('.form-wrapper').find('.comment-answer').addClass('shown');
+            $('.form-wrapper').find('.comment-answer').fadeIn(300);
         });
         //set new diapsson value
         function setDiapasonValue(input){

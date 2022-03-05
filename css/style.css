@@ -67,10 +67,12 @@ body {
   overflow: auto;
   max-width: 450px;
   margin: auto;
+  background: #ECEFF6;
 }
 
 .page-wrap .header {
   padding: 20px;
+  height: 62px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -83,6 +85,7 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #FFFFFF;
 }
 
 .page-wrap .header .logo {
@@ -103,11 +106,13 @@ body {
   line-height: 18px;
   color: #7D828B;
   border-bottom: 2px solid #9DCC8F;
+  background: #FFFFFF;
 }
 
 .page-wrap .content {
   padding-left: 25px;
   padding-right: 25px;
+  background: #FFFFFF;
 }
 
 .page-wrap .question {
@@ -328,27 +333,14 @@ body {
 
 .page-wrap .form-wrapper .comment-answer {
   border-top: 2px solid rgba(157, 204, 143, 0.4);
-  max-height: 0px;
-  -webkit-transition: max-height 0.3s ease-in;
-  -o-transition: max-height 0.3s ease-in;
-  transition: max-height 0.3s ease-in;
-  overflow: hidden;
-  padding: 0px;
-  opacity: 0;
-}
-
-.page-wrap .form-wrapper .comment-answer.shown {
-  opacity: 1;
   padding-top: 25px;
-  max-height: 300px;
-  overflow: initial;
+  display: none;
 }
 
 .page-wrap .form-wrapper .comment-answer .comment-block {
   -webkit-box-shadow: 0px 6px 24px 3px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 6px 24px 3px rgba(0, 0, 0, 0.06);
   border-radius: 20px;
-  overflow: visible;
 }
 
 .page-wrap .form-wrapper .comment-answer .comment-block .question {
@@ -453,6 +445,8 @@ body {
 
 .page-wrap .thanks-content {
   padding-top: 110px;
+  background: #FFFFFF;
+  height: calc(100% - 62px);
 }
 
 .page-wrap .thanks-content .picture {
