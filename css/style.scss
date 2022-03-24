@@ -2,6 +2,17 @@
 
 $fontPage: 'Source Sans Pro', sans-serif;
 $green: #6AAC45;
+$color0: #A23429;
+$color1: #A23429;
+$color2: #C1392B;
+$color3: #D1461B;
+$color4: #EC6D16;
+$color5: #FEA016;
+$color6: #EBEB1F;
+$color7: #5AD45A;
+$color8: #25C07C;
+$color9: #2C9C2C;
+$color10: #167F22;
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -86,6 +97,15 @@ body {
         color: #7D828B;
         border-bottom: 2px solid #9DCC8F;
         background: #FFFFFF;
+    }
+    .green-text {
+        font-family: $fontPage;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6AAC45;
+        padding-top: 18px;
     }
     .content {
         padding-left: 25px;
@@ -246,16 +266,210 @@ body {
                     }
                 }
             }
-            .label-descr {
-                padding-top: 25px;
-                padding-bottom: 28px;
-                font-family: $fontPage;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 20px;
-                text-align: center;
-                color: #7D828B;
+        }
+        .label-descr {
+            padding-top: 25px;
+            padding-bottom: 28px;
+            font-family: $fontPage;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #7D828B;
+        }
+        .scale-answer {
+            .scale-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                label {
+                    max-width: 100%;
+                    input[type=radio] {
+                        display: none;
+                    }
+                    .digit {
+                        border: 1.5px solid #EC6D16;
+                        border-radius: 50%;
+                        width: 25px;
+                        height: 25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: $fontPage;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #1B1F27;
+                        transition: all 0.3s ease-in;
+                    }
+                    &:nth-child(1){
+                        input[type=radio] {
+                            &:checked {
+                                & ~ {
+                                    .digit {
+                                        background: $color0;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                        .digit {
+                            border-color: $color0;
+                        }
+                    }
+                    &:nth-child(2){
+                        input[type=radio] {
+                            &:checked {
+                                & ~ {
+                                    .digit {
+                                        background: $color1;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                        .digit {
+                            border-color: $color1;
+                        }
+                    }
+                    &:nth-child(3){
+                        input[type=radio] {
+                            &:checked {
+                                & ~ {
+                                    .digit {
+                                        background: $color2;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                        .digit {
+                            border-color: $color2;
+                        }
+                    }
+                    &:nth-child(4){
+                        input[type=radio] {
+                            &:checked {
+                                & ~ {
+                                    .digit {
+                                        background: $color3;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                        .digit {
+                            border-color: $color3;
+                        }
+                    }
+                    &:nth-child(5){
+                        input[type=radio] {
+                            &:checked {
+                                & ~ {
+                                    .digit {
+                                        background: $color4;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                        .digit {
+                            border-color: $color4;
+                        }
+                    }
+                    &:nth-child(6){
+                        input[type=radio] {
+                            &:checked {
+                                & ~ {
+                                    .digit {
+                                        background: $color5;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                        .digit {
+                            border-color: $color5;
+                        }
+                    }
+                    &:nth-child(7){
+                        input[type=radio] {
+                            &:checked {
+                                & ~ {
+                                    .digit {
+                                        background: $color6;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                        .digit {
+                            border-color: $color6;
+                        }
+                    }
+                    &:nth-child(8){
+                        input[type=radio] {
+                            &:checked {
+                                & ~ {
+                                    .digit {
+                                        background: $color7;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                        .digit {
+                            border-color: $color7;
+                        }
+                    }
+                    &:nth-child(9){
+                        input[type=radio] {
+                            &:checked {
+                                & ~ {
+                                    .digit {
+                                        background: $color8;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                        .digit {
+                            border-color: $color8;
+                        }
+                    }
+                    &:nth-child(10){
+                        input[type=radio] {
+                            &:checked {
+                                & ~ {
+                                    .digit {
+                                        background: $color9;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                        .digit {
+                            border-color: $color9;
+                        }
+                    }
+                    &:nth-child(11){
+                        input[type=radio] {
+                            &:checked {
+                                & ~ {
+                                    .digit {
+                                        background: $color10;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                        .digit {
+                            border-color: $color10;
+                        }
+                    }
+                }
             }
         }
         .comment-answer {
@@ -355,5 +569,12 @@ body {
             max-width: 270px;
             margin: auto;
         }
+    }
+}
+@media screen and (max-width: 350px) {
+    .page-wrap .content,
+    .page-wrap .form-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
