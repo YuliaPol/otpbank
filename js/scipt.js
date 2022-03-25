@@ -7,23 +7,14 @@ jQuery(function ($) {
             $('.form-wrapper').find('.comment-answer').fadeIn(300);
         });
         $('.page-wrap').on('change', '.main-question input', function(e){
-            let value = $(this).val();
-            if(value < 7) {
-                $('.form-wrapper').find('.btn-submit').removeClass('active')
-            } else {
-                $('.form-wrapper').find('.btn-submit').addClass('active')
-            }
             $('.form-wrapper').find('.comment-answer').fadeIn(300);
         });
         $('.page-wrap').on('input', '.comment-answer textarea', function(e){
             let value = $(this).val();
-            let mainValue = $('.main-question input').val();
-            if(mainValue < 7){
-                if(value.length > 5){
-                    $('.form-wrapper').find('.btn-submit').addClass('active')
-                } else {
-                    $('.form-wrapper').find('.btn-submit').removeClass('active')
-                }
+            if(value.length > 5){
+                $('.form-wrapper').find('.btn-submit').addClass('active')
+            } else {
+                $('.form-wrapper').find('.btn-submit').removeClass('active')
             }
 
         });
